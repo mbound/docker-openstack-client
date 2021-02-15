@@ -18,7 +18,7 @@ RUN apk add --update \
   linux-headers \
   && apk add py-setuptools \
   && curl -O https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py \
-  && pip install --upgrade --no-cache-dir pip setuptools python-openstackclient \
+  && pip install --upgrade --no-cache-dir pip setuptools python-openstackclient python-heatclient \
   && apk del gcc musl-dev linux-headers libffi-dev \
   && rm -rf /var/cache/apk/*
 
